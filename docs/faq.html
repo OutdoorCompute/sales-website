@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>OutdoorCompute - Puts waste to work</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/">OutdoorCompute</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                      <!--<li class="nav-item"><a class="nav-link" href="#about">About</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">OutdoorCompute - FAQ</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Let us know if you have any question. You may find the answer to some question in our FAQ below.</p>
+                        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section" id="faq">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Frequently asked questions (FAQ)</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+									<h2>General</h2>
+									<dl>
+                    <dt>Can I be a customer of OutdoorCompute?</dt>
+										<dd>Yes, we are happy to give you feedback whether the uDC is a good solution for your use-case. We are looking for compute customers and heat recipients. Are you both? Then we will give a discount.</dd>
+									</dl>
+
+									<h2>Heat recipient customer</h2>
+									<dl>
+                    <dt>What is the size of the heat storage tanks?</dt>
+										<dd>(Short answer) A full uDC has two 1000 liter heat storage tanks. But depending on the customer requirements the heat storage tanks can be doubled to 2000 liters or reduced to 500 liters.</dd>
+										<dd>(Long answer) To calculate the heat storage capacity we use the following formula:
+											<ul>
+												<li>2000 liter storage tank, deltaT=30 Kelvin: Q = 1000 kg * 4186 J/Kg*degrees Celsius * 30 degrees Celsius / 3600000 = 69.76 kWh</li>
+												<li>1000 liter storage tank, deltaT=30 Kelvin: Q = 1000 kg * 4186 J/Kg*degrees Celsius * 30 degrees Celsius / 3600000 = 34.88 kWh</li>
+												<li> 500 liter storage tank, deltaT=30 Kelvin: Q = 1000 kg * 4186 J/Kg*degrees Celsius * 30 degrees Celsius / 3600000 = 17.44 kWh</li>
+											</ul>
+
+										We determine the optimal size of the heat storage tanks for each use-case. Some of the variables that we take in account are the temperature difference, heat loss and available space.
+										</dd>
+									</dl>
+
+									<dl>
+                    <dt>Reusing heat</dt>
+										<dd>We have build our own heat exchanger that is optimized for the uDC. Depending on the type of heat recipient we can make a directly connection or use an intermediate heat exchanger.</dd>
+									</dl>
+
+									<dl>
+                    <dt>Where is the uDC placed?</dt>
+										<dd>The main advantage of the uDC is that it must be placed outside. Computing outside has major benefits compared to the cloud or on-premise data centers. The uDC does not need any expensive additional systems like fire prevention, air-conditioning or access control.</dd>
+									</dl>
+
+									<dl>
+                    <dt>What if the heat storage tanks are full?</dt>
+										<dd>We have different solutions depending on the setup, heat recipient and compute customer. We encourage our customers to reuse as much waste heat possible. And work together to find new solution to prevent inefficient usage of energy. The main strategies are: reducing the amount of compute power in a uDC, use the waste heat for an additional useful purpose or dissipating heat into the environment.</dd>
+										<dd>Want to reuse as much of the waste heat. Please take a look at our landing page. On this page is a description of the different uDC setups.</dd>
+									</dl>
+
+									<dl>
+                    <dt>What is the ideal climate</dt>
+										<dd>Any climate or use-case in which the waste heat can be reused for a useful purpose.</dd>
+									</dl>
+
+									<dl>
+                    <dt>What is the outlet temperature of the uDC?</dt>
+										<dd>This depends on the inlet temperature. But in general we can set any outlet temperature between 20 and 55 degrees Celsius.</dd>
+									</dl>
+
+									<dl>
+                    <dt>What internet connection is required.</dt>
+										<dd>A fiber connection is ideal (1 to 2Gbps).</dd>
+									</dl>
+
+									<dl>
+                    <dt>Why a uDC and not an heat pump?</dt>
+										<dd>A heat pump is for some use-cases a great solution. The down side of solutions like a heat pump is that they are less efficient when the heat is needed (autumn, winter, spring). The uDC works in reverse, in the cold periods when the heat is needed the uDC works most efficient. Also a heat pump costs money to operate, and the uDC generate a return by selling compute power which generates the heat.</dd>
+									</dl>
+
+									<h2>Compute customer</h2>
+									<dl>
+                    <dt>Is my data secure on the uDC?</dt>
+										<dd>Yes, we take a shared responsibility with the you to achieve the maximum level of security. We monitor the status and physical surrounding of the uDCs. When a trigger is breached we contact the authorities to take the required action. We also have many other additional security measures.</dd>
+									</dl>
+
+									<dl>
+                    <dt>How can the uDC deliver cost-effective compute power?</dt>
+										<dd>The uDC does not require expensive additional systems to operate. On-premise, co-location or cloud datacenters need a building, local staff, air-conditioning, fire prevention etc.</dd>
+										<dd>Waste heat of the uDC is reused for a useful purpose.</dd>
+										<dd>Energy efficient. The uDC is placed directly at location where heat is needed. Eliminating pipes to transfer the heat over long distances.</dd>
+									</dl>
+
+									<dl>
+                    <dt>Which software can run on the FaaS/Paas?</dt>
+										<dd>Almost any language can run on our systems: Python, .NET, Go, Rust. Contact us if you want to know if your programming language is support.</dd>
+									</dl>
+									<dl>
+                    <dt>Which Operating systems are supported on IaaS?</dt>
+										<dd>We support almost any GNU/Linux or BSD distribution.</dd>
+									</dl>
+                </div>
+            </div>
+        </section>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - OutdoorCompute</div></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
