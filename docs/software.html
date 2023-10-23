@@ -20,6 +20,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/benchmark">Benchmark</a></li>
                         <li class="nav-item"><a class="nav-link" href="/software">Software</a></li>
                         <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
                     </ul>
@@ -46,20 +47,9 @@
                 <h2 class="text-center mt-0">Software</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
-									<h2>Schedular</h2>
-                  <p>
-                    A simple POST API request can be used to create a FaaS instance. The JSON data structure contains the parameters like payload source URL, programming language and datasource destination.
-                    <img class="img-fluid" src="assets/portfolio/software_schema_udc.png" alt="..." />
-                  </p>
-
-									<h2>Deploy your code</h2>
-                  <p>
-                    The code that needs to run on the FaaS instance can be downloaded from anywhere. And the result can also be uploaded anywhere.
-                    <img class="img-fluid" src="assets/portfolio/software_schema_process.png" alt="..." />
-                  </p>
 									<h2>Programming Language Suppport</h2>
                   <p>
-                    In general, any binary compiled for Linux or FreeBSD is supported. Besides running binaries we also provide FaaS instances with the Software Development Kit (SDK) of the programming language installed:
+                    In general, any binary compiled for Linux or FreeBSD is supported. Besides running binaries we also provide FaaS instances with a Software Development Kit (SDK) for the following programming languages:
                     <ul>
                       <li>.NET (6.0/7.0)</li>
                       <li>Go</li>
@@ -67,6 +57,33 @@
                       <li>Python3</li>
                       <li>Rust</li>
                       <li>Just ask, and we can provide the required SDK FaaS environment for you.</li>
+                  </p>
+
+									<h2>Schedular</h2>
+                  <p>
+                    A simple POST API request can be used to create a FaaS instance. A JSON data structure is transmitted within the request body of the API request. The JSON data contains the parameters like the payload source URL, SDK version and datastore destination.
+                  </p>
+                  <p>
+                    The task schedular ensures that FaaS instances are distributed equally between the servers.
+                    <figure>
+                      <img class="img-fluid" src="assets/portfolio/software_schema_udc.png" alt="..." />
+                    </figure>
+                  </p>
+
+									<h2>Deploy your code</h2>
+                  <p>
+                    The code that need to run on the FaaS instance can be downloaded from anywhere. And the result can also be uploaded anywhere.
+                  </p>
+                  <p>
+                    If post-processing is needed by another FaaS instance its is recommeded to store the result on the local datastore within the Micro Data Center (uDC). The network bandwidth between the FaaS instances is 10Gbps (within the same uDC).
+                    <figure>
+                      <img class="img-fluid" src="assets/portfolio/software_schema_process.png" alt="..." />
+                    </figure>
+                  </p>
+
+									<h2>Reliability</h2>
+                  <p>
+                    When the connection to the local uDC is lost, you can switch to our uDC in the cloud.
                   </p>
                 </div>
             </div>
