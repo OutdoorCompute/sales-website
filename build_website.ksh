@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-echo -e 'index\nfaq\nsoftware\nbenchmark\nabout' | while read PAGE
+echo -e 'index\nfaq\nsoftware\nbenchmark\nabout\ncontact' | while read PAGE
 do
   echo $PAGE
 
