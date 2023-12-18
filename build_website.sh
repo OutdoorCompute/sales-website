@@ -2,7 +2,7 @@
 
 echo "Building Webpages:"
 
-echo -e 'index\nfaq\nsoftware\nbenchmark\nabout\ncontact\norder' | while read PAGE
+echo -e 'index\nfaq\nsoftware\nbenchmark\nabout\ncontact\norder\njourney' | while read PAGE
 do
   echo "  $PAGE-content.html > docs/$PAGE.html"
 
