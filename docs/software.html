@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="assets/thirdparty/asciinema-player.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -93,6 +94,25 @@
                     When the connection to the local uDC is lost, you can switch to our uDC in the cloud.
                   </p>
                 </div>
+
+                <div class="row gx-4 gx-lg-5">
+									<h2>Commandline</h2>
+                  <p>The commandline program is an convenient way to manage the Micro Data Center. It is a wrapper around CURL that uses API requests to communicate with the Micro Data Center. In this demo we will spin-up multiple instances that will execute a python script. The python script will collect all the links on the target website.</p>
+                  <ol>
+                    <li>Initialize environment</li>
+                    <li>Deploy instances</li>
+                    <li>Retrieve output</li>
+                    <li>Demonstration how to log into the instance with SSH. Can be very useful when debugging or testing your code.</li>
+                  </ol>
+
+                  <p>
+                    <div id="demo"></div>
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        AsciinemaPlayer.create('assets/artifacts/demo1.rec', document.getElementById('demo'), {'poster': 'npt:0:10'});
+                      });
+                    </script>
+                </div>
             </div>
         </section>
         </section>
@@ -107,5 +127,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="assets/thirdparty/asciinema-player.min.js"></script>
     </body>
 </html>
