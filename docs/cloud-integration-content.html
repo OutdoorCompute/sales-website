@@ -20,42 +20,34 @@
                 <h2 class="text-center mt-0">Seamless Integration</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
+                  <h3>Levels of cloud integration</h3>
                   <p>
-                    Different levels integration with each its own cons and pros:
+                    We support three levels of integration with each its own cons and pros:
                   </p>
 
+                  <h4>1. Full cloud integration</h4>
                   <p>
-                    <strong>- No code modification (e.g., AWS Outpost or Azure HCI)</strong>: These solutions are very expensive and are suitable if you must (by law) support the public cloud software on premise. In the Cloud you can deploy VMs and most other services directly into you own geographical area.
+                  These solutions are expensive and are suitable if you must (by law) support the public cloud software on premise. In the Cloud you can deploy VMs and most other services directly into you own geographical area.
+
+                    <ul>
+                      <li><a href="https://aws.amazon.com/outposts/" target="_blank">AWS Outpost</a></li>
+                      <li><a href="https://azure.microsoft.com/en-us/products/azure-stack/hci/" target="_blank">Azure HCI</a></li>
+                    </ul>
                   </p>
 
                   <p>
                     Do you have regulatory constrains and insist on using AWS outpost, Azure HCI or similar solutions? Then we can discuss how to integrate the cloud servers directly into the Micro Data Center. The benefit is that you can reuse the heat and do not need to build an expensive server room.
                   </p>
 
+                  <h4>2. Integration with cloud service (FaaS/PaaS)</h4>
                   <p>
-                    Do you have regulatory constrains but you maintain you own infrastructure or want to integrate with the cloud? Then the options below are valid.
+                    A Event Driver Architecture like AWS lambda, Azure Functions or Apache Kafka are very easy to connect with the Micro Data Center. Instead of running your logic in containers or FaaS runtime instances you deploy them into a Runtime instance in the Micro Data Center. That's it, you have just saved on compute expenses and have become the greenest IT company (with an social impact).
+                    <ul>
+                      <li><a href="https://learn.microsoft.com/en-us/azure/architecture/web-apps/serverless/architectures/web-app" target="_blank">Azure Functions</a></li>
+                      <li><a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda</a></li>
+                      <li><a href="https://kafka.apache.org/" target="_blank">Kafka</a></li>
+                    </ul>
                   </p>
-
-                  <p>
-                    <strong>- Integrate minimal code modification (Event Driver Architecture)</strong>: A Event Driver Architecture like AWS lambda, Azure Functions or Apache Kafka are very easy to connect with the Micro Data Center. Instead of running your logic in containers or FaaS runtime instances you deploy them into a Runtime instance in the Micro Data Center.
-                    That's it, you have just saved on compute expenses and have become the greenest IT company (with an social impact).
-                  </p>
-
-                  <p>
-                    <strong>- Fully based on the uDC</strong>: Using our API you can deploy a vanilla Operating System on one or more Micro Data Center server. At this point you can use SSH to log into the server and have full control. Each Compute flavor Micro Data Center has 16 server, each one has a 16 core CPUs which are in general 30% faster than the 64 er 128 core CPU's found in traditional data centers.
-                  </p>
-
-                  <p><span class="text-muted">During your journey, we love to advice you on how to utilize 100% of the Micro Data Center resources.</span></p>
-                  
-                  <h3>Event Driven Architecture as a Service</h3>
-                  <h4>Function as a Service (FaaS)</h4>
-                  <p>FaaS, or Function as a Service, is a cloud computing service that allows users to execute code in response to events without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.</p>
-                    
-                  <p>Processes within a FaaS environment are activated in response to specific events, such as an HTTP request targeting a designated endpoint, or by various cloud components that are configured to initiate triggers within the cloud's FaaS framework.</p>
-                    
-                  <p>The Micro Data Center can hook into those triggers and become fully integrated into the cloud's FaaS framework.</p>
-
-                  <p>Examples of FaaS services are: AWS Lambda, Cloudflare Workers, Azure, DigitalOcean, Google Cloud, Oracle Cloud and Netlify functions.</p>
 
                   <h5>Use case: Azure Service Bus</h5>
                   <p>
@@ -64,23 +56,19 @@
 
                   <p>You could deploy code instances that require a high amount of compute resources or thousands of instances that process small compute jobs. The result can be <strong>stored locally</strong> into the Micro Data Center, effectively improving inter-process latency and reducing network transit.</p>
 
-                  <h4>Platform as a Service (PaaS)</h4>
-                  <p>Cloud platforms offer containers that can be directly used without maintaining the underlying systems (e.g. Kubernetes). In most cases the name "Kubernetes" is included into the PaaS service name: Elastic Kubernetes Service (EKS), Azure Kubernetes Service (AKS), IBM Cloud Kubernetes Service etc.</p>
+                  <h4>3. You manage the full technology stack (IaaS)</h4>
+                  <p>
+                    You can use our API or Terraform plugin to (re-)deploy your favorite OS onto the servers. We recomment using configuration management tools like Puppet, Chef, Ansible or SaltStack to deploy software solutions.
 
-                  <p>Code that currently runs in a container (e.g., Kubernetes, Docker, LXC) can also run in our Micro Data Center. Your base workload could run in the Micro Data Center, while scaling up into the cloud if necessary. Leveraging the cost-effective compute of the Micro Data Center and the scalability of the Cloud.</p>
-
-                  <h3>Event Driven Architecture Self-hosted</h3>
-                  <p>A self-hosted Event Driven Architecture (EDA) is similar to FaaS or PaaS. The difference is that with FaaS or Paas you are not responsible for maintaining and scaling the underlying software.</p>
-
-                  <p><strong>How to use the Micro Data Center when using self-hosted solutions?</strong>
-                  <ol>
-                    <li>You can deploy your logic into it's own Micro Data Center instance, effectivily using our FaaS/FaaS service.</li>
-                    <li>Or run your software stack on a bare Micro Data Center server. You can use our API or Terraform plugin to re-deploy an OS onto the servers. We recomment using configuration management tools like Puppet, Chef, Ansible or SaltStack to deploy software solutions.</li>
-                  </ol>
+                  <ul>
+                    <li><a href="https://www.puppet.com/" target="_blank">Puppet</a></li>
+                    <li><a href="https://www.ansible.com/" target="_blank">Ansible</a></li>
+                    <li><a href="https://docs.saltproject.io/en/getstarted/" target="_blank">SaltStack</a></li>
+                    <li><a href="https://www.terraform.io/" target="_blank">Terraform</a></li>
+                  </ul>
                   </p>
 
-                  <p>Examples of event drive architecture are: RabbitMQ, Apache Pulsar, Amazon Kinesis, Google Cloud Pub/Sub, Azure Event Hubs, EventStoreDB and ActiveMQ.</p>
-                    
+                  <p><span class="text-muted">During your journey, we love to advice you on how to utilize 100% of the Micro Data Center resources.</span></p>
                 </div>
             </div>
 
