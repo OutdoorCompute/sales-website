@@ -45,6 +45,7 @@ az servicebus namespace authorization-rule keys list --namespace-name customer-c
                   </pre>
                   </p>
 									<h4>2. Run Azure Function Runtime on the Micro Data Center</h4>
+                  <p>
                   <pre>
 # 1. Create environment eg.: customer1
 ./ocapi -p -t customer1 -a init -g 34.245.31.199 -u tokens/default_user.txt -l ~/.ssh/id_rsa.pub -f artifacts/bootstrap_python3_azure_function_app.sh
@@ -58,6 +59,7 @@ az servicebus namespace authorization-rule keys list --namespace-name customer-c
                   </pre>
 
 									<h4>3. Sending to the Azure ServiceBus Queue</h4>
+                  <p>
                   <pre>
 apt-get install python3-azure
 
@@ -69,9 +71,9 @@ cd snippets/azure
                     <div id="demo"></div>
                     <script>
                       document.addEventListener('DOMContentLoaded', function() {
-                        AsciinemaPlayer.create('assets/artifacts/20240304-azure_demo.rec', document.getElementById('demo'), 
-                          'poster': 'npt:0:10', 
-                          'markers': [[0.43, "Initialize environment"],
+                        AsciinemaPlayer.create('assets/artifacts/20240304-azure_demo.rec', document.getElementById('demo'), \
+                          'poster': 'npt:0:10', \
+                          'markers': [[0.43, "Initialize environment"], \
                                       [3.30, "test"]]);
                       });
                     </script>
