@@ -26,10 +26,9 @@
                         <li class="nav-item"><a class="nav-link" href="/journey">Journey</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                         <li class="nav-item"><hr class="dropdow-divider"></hr></li>
-                        <li class="nav-item"><a class="nav-link" href="/cloud-integration">Integration</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/software">Software</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/cloud-integration">Cloud Integration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/technical-specifications">Cloud units</a></li>
                         <li class="nav-item"><a class="nav-link" href="/faq#security">Security</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/technical-specifications">Specifications</a></li>
                         <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
                         <li class="nav-item"><a class="nav-link" href="/howto">HowTo</a></li>
                     </ul>
@@ -51,71 +50,6 @@
                 </div>
             </div>
         </header>
-        <section class="page-section" id="software">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Software</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-									<h2>Programming Language Suppport</h2>
-                  <p>
-                    In general, any binary compiled for Linux or FreeBSD is supported. Besides running binaries we also provide FaaS instances with a Software Development Kit (SDK) for the following programming languages:
-                    <ul>
-                      <li>.NET (6.0/7.0)</li>
-                      <li>Go</li>
-                      <li>PHP8</li>
-                      <li>Python3</li>
-                      <li>Rust</li>
-                      <li>Just ask, and we can provide the required SDK FaaS environment for you.</li>
-                  </p>
-
-									<h2>Schedular</h2>
-                  <p>
-                    A simple POST API request can be used to create a FaaS instance. A JSON data structure is transmitted within the request body of the API request. The JSON data contains the parameters like the payload source URL, SDK version and datastore destination.
-                  </p>
-                  <p>
-                    The task schedular ensures that FaaS instances are distributed equally between the servers.
-                    <figure>
-                      <img class="img-fluid" src="assets/portfolio/software_schema_udc.png" alt="..." />
-                    </figure>
-                  </p>
-
-									<h2>Deploy your code</h2>
-                  <p>
-                    The code that need to run on the FaaS instance can be downloaded from anywhere. And the result can also be uploaded anywhere.
-                  </p>
-                  <p>
-                    If post-processing is needed by another FaaS instance its is recommeded to store the result on the local datastore within the Micro Data Center (uDC). The network bandwidth between the FaaS instances is 10Gbps (within the same uDC).
-                    <figure>
-                      <img class="img-fluid" src="assets/portfolio/software_schema_process.png" alt="..." />
-                    </figure>
-                  </p>
-
-									<h2>Reliability</h2>
-                  <p>
-                    When the connection to the local uDC is lost, you can switch to our uDC in the cloud.
-                  </p>
-                </div>
-
-                <div class="row gx-4 gx-lg-5">
-									<h2>Commandline</h2>
-                  <p>The commandline program is an convenient way to manage the Micro Data Center. It is a wrapper around CURL that uses API requests to communicate with the Micro Data Center. In this demo we will spin-up multiple instances that will execute a python script. The python script will collect all the links on the target website.</p>
-                  <ol>
-                    <li>Initialize environment</li>
-                    <li>Deploy instances</li>
-                    <li>Retrieve output</li>
-                    <li>Demonstration how to log into the instance with SSH. Can be very useful when debugging or testing your code.</li>
-                  </ol>
-
-                  <p>
-                    <div id="demo"></div>
-                    <script>
-                      document.addEventListener('DOMContentLoaded', function() {
-                        AsciinemaPlayer.create('assets/artifacts/demo1.rec', document.getElementById('demo'), {'poster': 'npt:0:10'});
-                      });
-                    </script>
-                </div>
-            </div>
-        </section>
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
