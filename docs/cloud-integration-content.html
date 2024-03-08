@@ -7,7 +7,7 @@
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Let us know if you have any questions. We can help integrate or provide custom solution to connect with your systems.</p>
+                        <p class="text-white-75 mb-5">Let us know if you have any questions. We can help you connect the Cloud Unit to our cloud environment.</p>
                         <a class="btn btn-primary btn-xl" href="#cloud-integration">Find Out More</a>
                     </div>
                 </div>
@@ -22,25 +22,23 @@
                 <div class="row gx-4 gx-lg-5">
                   <h3>Levels of cloud integration</h3>
                   <p>
-                    We support three levels of integration with each its own cons and pros:
+                    We support three levels of cloud:
                   </p>
 
-                  <h4>1. Full Cloud integration</h4>
+                  <h4>1. Cloud Environment</h4>
                   <p>
-                  Full Cloud integration allows you to deploy cloud services directly into the Micro Data Center. This solution is more expensive than the other solutions we provide because the cloud provider charges additional fees for running their cloud software outside their infrastructure. But still less expensive than similar on-premise or co-location solutions. Full cloud Integration is suitable if you must (by law) support the public cloud software locally.
+                  Your cloud environment can expand to the Cloud Unit as an extra avaliability zone. It is an easy solution to comply with regulatory requirements or to bring your cloud environment to a specific geographical location. The cloud provider charges additional fees for running their full software stack on the Cloud Unit. But it is still less expensive than similar on-premise or co-location solutions. 
+
                     <ul>
                       <li><a href="https://aws.amazon.com/outposts/" target="_blank">AWS Outpost</a></li>
                       <li><a href="https://azure.microsoft.com/en-us/products/azure-stack/hci/" target="_blank">Azure HCI</a></li>
                     </ul>
                   </p>
 
+                  <h4>2. Cloud Services</h4>
                   <p>
-                    Do you have regulatory constrains and insist on using AWS outpost, Azure HCI or similar solutions? Then we can discuss how to integrate the cloud servers directly into the Micro Data Center. The benefit is that you can reuse the heat and do not need to build an expensive server room.
-                  </p>
-
-                  <h4>2. Integration with cloud service (FaaS/PaaS)</h4>
-                  <p>
-                    A Event Driver Architecture like AWS lambda, Azure Functions or Apache Kafka are very easy to connect with the Micro Data Center. Instead of running your logic in containers or FaaS runtime instances you deploy them into a Runtime instance in the Micro Data Center. That's it, you have just saved on compute expenses and have become the greenest IT company (with an social impact).
+                    The Cloud Unit can effortlessly be plugged into a range of Cloud services. That's it, you have just saved on cloud expenses and have become the greenest IT company (with an social impact).
+                    
                     <ul>
                       <li><a href="https://learn.microsoft.com/en-us/azure/architecture/web-apps/serverless/architectures/web-app" target="_blank">Azure Functions</a></li>
                       <li><a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda</a></li>
@@ -50,14 +48,13 @@
 
                   <h5>Use case: Azure Service Bus</h5>
                   <p>
-                    The Azure Service Bus queue accumulates messages transmitted from various FaaS components. In the Micro Data Center, hundreds of code instances can be operated, which are effortlessly deployable via our API. These instances are designed to immediately process any new messages appearing in the Service Bus queue.
+                    The Azure Service Bus Queue accumulates messages transmitted from various cloud components. In the Cloud Unit, hundreds of code instances are standing by to immediately process any new messages appearing in the Service Bus Queue. The local storage in the Cloud Unit is leveraged to improving inter-process latency and reducing network transit. 
                   </p>
 
-                  <p>You could deploy code instances that require a high amount of compute resources or thousands of instances that process small compute jobs. The result can be <strong>stored locally</strong> into the Micro Data Center, effectively improving inter-process latency and reducing network transit.</p>
-
-                  <h4>3. You manage the full technology stack (IaaS)</h4>
-                  <p>
-                    You can use our API or Terraform plugin to (re-)deploy your favorite OS onto the servers. We recomment using configuration management tools like Puppet, Chef, Ansible or SaltStack to deploy software solutions.
+                  <h4>3. Software Stack</h4>
+                  <p>Imagine you can deploy your software stack effortlessly at any physical location. Ideal for low latency applications like IoT, 5G, local AI and Industry 4.0.</p>
+                    
+                  <p>We deploy and maintain the physical Cloud Unit, so you can focus on the software. Use our API or Terraform plugin to deploy your favorite OS. We recomment using configuration management tools like Puppet, Chef, Ansible or SaltStack to deploy your software stack.</p>
 
                   <ul>
                     <li><a href="https://www.puppet.com/" target="_blank">Puppet</a></li>
@@ -67,7 +64,7 @@
                   </ul>
                   </p>
 
-                  <p><span class="text-muted">During your journey, we love to advice you on how to utilize 100% of the Micro Data Center resources.</span></p>
+                  <p><span class="text-muted">During your journey, we love to advice you on how to utilize 100% of the Cloud Unit resources.</span></p>
                 </div>
             </div>
 
