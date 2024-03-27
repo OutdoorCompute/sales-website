@@ -76,7 +76,7 @@
 									<p>The FLOPS metric can only be reliably used to compare CPU performance if the same method is used to determine the FLOPS. FLOPS only measures a specific set of operations and more metrics like random string sorting, data encryption, compression, sequential or random I/O are needed to get a clear picture of CPU and server performance. The server performance depends on many factors like type of workload, cluster architecture, cache size, memory bandwidth and CPU features. But FLOPS can be useful to get a rough indication for the processing power of a system.</p>
 									<p>OutdoorCompute focuses on Power Usage Effectiveness and Energy Reuse Effectiveness. That is why the number of FLOPS <strong>per watt</strong> is a useful metric for us, to get a rough indication of the power effectiveness.</p>
 									<h5>Are all FLOPS the same?</h5>
-									<p>No, you need to be very careful when comparing CPU's by the number of FLOPS. For example, the IEEE 754 standard uses the single-precision (32-bits) or the double-precision floating points. Depending on which method is used the FLOPS metric can differ a lot. Only the result of the same benchmark tool can used to compare CPUs.</p>
+									<p>No, you need to be very careful when comparing CPUs by the number of FLOPS. For example, the IEEE 754 standard uses the single-precision (32-bits) or the double-precision floating points. Depending on which method is used the FLOPS metric can differ a lot. Only the result of the same benchmark tool can used to compare CPUs.</p>
 									<p>Let us get the FLOPS for the AMD EPYC 7313 from different sources:</p>
 									<ul>
 									<li>Microway.com rates the theoretical Peak Performance in FLOPS on 750 GigaFLOPS (double-precision 64-bit).</li>
@@ -97,7 +97,7 @@
 									<h5>Servers</h5>
 									<p>The key insight from this section is that choosing the best CPU for the Cloud Unit hinges on a variety of considerations. These include initial purchase and ongoing variable costs, efficiency metrics such as FLOPS per Watt, and reliability. Although newer CPU generations offer enhanced efficiency, they also tend to incur substantially higher costs per FLOP.</p>
 
-									<p>The Snellius supercomputer of the Netherlands (8.2 PetaFLOPS) uses mainly the AMD EPYC 9654 and 7H12 CPU's in its cluster. For the compute flavored Cloud Unit we use the lower count core CPUs like the AMD EPYC 7313P because it is most suitable for Function as a Service (FaaS) workloads at this moment. But for specific customer use-cases we will determine the optimal CPU to use.</p>
+									<p>The Snellius supercomputer of the Netherlands (8.2 PetaFLOPS) uses mainly the AMD EPYC 9654 and 7H12 CPUs in its cluster. For the compute flavored Cloud Unit we use the lower count core CPUs like the AMD EPYC 7313P because it is most suitable for Function as a Service (FaaS) workloads at this moment. But for specific customer use-cases we will determine the optimal CPU to use.</p>
 
 									<p> Lets compare using the CPUbenchmark.nl FLOPS metrics:</p>
 
