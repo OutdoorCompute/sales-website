@@ -103,7 +103,7 @@
 
 									<pre>
 										<code>
-Generation                 CPU cores   GigaFLOPS   TPD     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
+Generation                 CPU cores   GigaFLOPS   TDP     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
 AMD EPYC 9654  4e (2022)   96          ~488        360W    7                   3.42                1.36
 AMD EPYC 7763  3e (2020)   64          ~293        280W    9                   2.64                1.06
 AMD EPYC 7H12  2e (2018)   64          ~238        280W    9                   2.14                0.84
@@ -115,7 +115,7 @@ AMD EPYC 7282  3e (2019)   16          ~58         155W    20                  1
                   <p>And the Microway.com FLOPS metrics (theoretical):</p>
                   <pre>
                   <code>
-Generation                 CPU cores   GigaFLOPS   TPD     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
+Generation                 CPU cores   GigaFLOPS   TDP     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
 AMD EPYC 7763  3e (2020)   64          ~2500       280W    9                   22.5                9.00
 AMD EPYC 7313P 3e (2020)   16          ~800        155W    16                  12.8                5.12
 AMD EPYC 7282  2e (2019)   16          ~750        120W    20                  15.0                6.00
@@ -140,7 +140,7 @@ AMD EPYC 7313P      16       16                    $900.-    $14,400.-
 
 									<h6>Higher or lower number of CPU cores?</h6>
 									<p>The CPU core systems with a high amount of cores (64) have around ~10% more FLOPS per Watt, but require a significant initial investment. And other metrics that where out of scope in this blog post like storage I/O, RAM bandwidth will be much better performing on lower core count CPUs.</p>
-									<p>The higher amount of cores also means that the Thermal Design Power (TPD) will higher. ~400 Watt for 96 core and ~200W for a 16 core CPU. But that is not an issue because we use liquid immersion cooling, the Cloud Unit can support a TPD up to 1000 Watt. The improved heat transfer rate that is caused by this cooling method could boost the performance of the CPUs with +30% (AMD EPYC core performance boost).</p>
+									<p>The higher amount of cores also means that the Thermal Design Power (TDP) will higher. ~400 Watt for 96 core and ~200W for a 16 core CPU. But that is not an issue because we use liquid immersion cooling, the Cloud Unit can support a TDP up to 1000 Watt. The improved heat transfer rate that is caused by this cooling method could boost the performance of the CPUs with +30% (AMD EPYC core performance boost).</p>
 									<p>Last major point is reliability. Higher core count per CPU means that for the same amount of FLOPS less servers are needed. Which means that if 1 server fails a large part of the compute power will not be available (96 core = 20%, 16 core = 6.25%). That is why for the Function as a Service (FaaS) use-case which executes many small tasks we use a CPU with a lower core count.</p>
 
 									<h5>Conclusion</h5>
@@ -156,8 +156,8 @@ AMD EPYC 7313P      16       16                    $900.-    $14,400.-
 									<p>You can apply the same calculation method to determine the FLOPS using other benchmark tools or methods:</p>
 
 									<ul>
-                    <li><strong>FLOPS per Cloud Unit</strong> = 5000W/((2*TPD) * FLOPS per CPU) + 12%</li>
-                    <li><strong>FLOPS/Watt per Cloud Unit</strong> = (5000W/((2*TPD) * FLOPS per CPU) + 12%) / (TPD * (5000W/((2*TPD))</li>
+                    <li><strong>FLOPS per Cloud Unit</strong> = 5000W/((2*TDP) * FLOPS per CPU) + 12%</li>
+                    <li><strong>FLOPS/Watt per Cloud Unit</strong> = (5000W/((2*TDP) * FLOPS per CPU) + 12%) / (TDP * (5000W/((2*TDP))</li>
 									</ul>
 
 									<p class="small text-muted">+12% is the assumed AMD Core Performance Boost due immersion cooling.</p>
