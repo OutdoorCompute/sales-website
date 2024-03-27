@@ -104,11 +104,11 @@
 									<pre>
 										<code>
 Generation                 CPU cores   GigaFLOPS   TPD     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
-AMD EPYC 9654  4e (2022)   96          ~488        360W    7                   3.42                0.68
-AMD EPYC 7763  3e (2020)   64          ~293        280W    9                   2.64                0.53
-AMD EPYC 7H12  2e (2018)   64          ~238        280W    9                   2.14                0.42
-AMD EPYC 7313P 3e (2020)   16          ~80         155W    16                  2.35                0.47
-AMD EPYC 7282  3e (2019)   16          ~58         155W    20                  1.16                0.47
+AMD EPYC 9654  4e (2022)   96          ~488        360W    7                   3.42                1.36
+AMD EPYC 7763  3e (2020)   64          ~293        280W    9                   2.64                1.06
+AMD EPYC 7H12  2e (2018)   64          ~238        280W    9                   2.14                0.84
+AMD EPYC 7313P 3e (2020)   16          ~80         155W    16                  2.35                0.94
+AMD EPYC 7282  3e (2019)   16          ~58         155W    20                  1.16                0.94
                     </code>
                   </pre>
 
@@ -116,9 +116,9 @@ AMD EPYC 7282  3e (2019)   16          ~58         155W    20                  1
                   <pre>
                   <code>
 Generation                 CPU cores   GigaFLOPS   TPD     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
-AMD EPYC 7763  3e (2020)   64          ~2500       280W    9                   22.5                4.50
-AMD EPYC 7313P 3e (2020)   16          ~800        155W    16                  12.8                2.56
-AMD EPYC 7282  2e (2019)   16          ~750        120W    20                  15.0                3.00
+AMD EPYC 7763  3e (2020)   64          ~2500       280W    9                   22.5                9.00
+AMD EPYC 7313P 3e (2020)   16          ~800        155W    16                  12.8                5.12
+AMD EPYC 7282  2e (2019)   16          ~750        120W    20                  15.0                6.00
                   </code></pre>
 
                   <p>Costs of servers in the Cloud Unit:</p>
@@ -156,7 +156,8 @@ AMD EPYC 7313P      16       16                    $900.-    $14,400.-
 									<p>You can apply the same calculation method to determine the FLOPS using other benchmark tools or methods:</p>
 
 									<ul>
-                    <li><strong>FLOPS per Cloud Unit</strong> = 5000w/((2*TPD) * FLOPS per CPU) + 12%</li>
+                    <li><strong>FLOPS per Cloud Unit</strong> = 5000W/((2*TPD) * FLOPS per CPU) + 12%</li>
+                    <li><strong>FLOPS/Watt per Cloud Unit</strong> = (5000W/((2*TPD) * FLOPS per CPU) + 12%) / (TPD * (5000W/((2*TPD))</li>
 									</ul>
 
 									<p class="small text-muted">+12% is the assumed AMD Core Performance Boost due immersion cooling.</p>
